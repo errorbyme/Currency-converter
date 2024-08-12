@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  background-color: rgb(252, 252, 252);
+}
+.c-box {
+  box-shadow: 0 0 50px rgb(134, 134, 134);
+  width: 600px;
+  height: 320px;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.c-header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(77, 77, 77);
+}
+.select-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+select {
+  width: 170px;
+  padding: 0.4rem;
+  padding-left: 3rem;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  display: block;
+  position: relative;
+  outline: none;
+}
+.inner-box {
+  border-radius: 5px;
+  position: relative;
+  background-color: lightgray;
+}
+.inner-box img {
+  position: absolute;
+  width: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+label {
+  color: rgb(69, 69, 69);
+}
+.fav {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+}
+.rev-btn {
+  background-color: lightgray;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputBox {
+  padding: 1rem 0;
+}
+.msg {
+  margin-bottom: 1rem;
+  font-weight: 550;
+  font-style: italic;
+}
+.inputBox input {
+  width: 100%;
+  padding: 0.3rem 0 0.4rem 0.3rem;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.c-btn {
+  padding: 0.7rem 3rem;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  transition: all 300ms;
+}
+.c-btn img {
+  width: 1rem;
+  margin-left: 10px;
+}
+@media screen and (max-width: 450px) {
+  .select-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  select {
+    width: 100%;
+  }
+  .rev-btn {
+    margin: 0.5rem auto;
+    transform: rotate(90deg);
+  }
+}
